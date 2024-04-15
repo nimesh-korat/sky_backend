@@ -46,6 +46,15 @@ app.use(
   })
 );
 // Configure express-session middleware
+
+// Configure express-session middleware
+// app.use(session({
+//   secret: 'your-secret-key',
+//   resave: false,
+//   saveUninitialized: true
+// }));
+
+
 app.use(
   session({
     secret: "your-secret-key",

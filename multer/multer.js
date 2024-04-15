@@ -5,7 +5,7 @@ const productPicStorage = multer.diskStorage({
 
     //path to store the product
     destination: (req, file, cb) => {
-        cb(null, "../backend/images/productImages");
+        cb(null, "./images/productImages");
     },
 
     //filename to give to the product
@@ -22,7 +22,7 @@ const categoryPicStorage = multer.diskStorage({
 
     //path to store the category
     destination: (req, file, cb) => {
-        cb(null, "../backend/images/categoryImages");
+        cb(null, "./images/categoryImages");
     },
 
     //filename to give to the category
