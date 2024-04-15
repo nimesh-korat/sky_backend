@@ -51,13 +51,13 @@ app.use(
     secret: "your-secret-key",
     resave: false,
     saveUninitialized: true,
-    // cookie: {
-    //   secure: false,
-    //   sameSite: "strict",
-    //   // httpOnly: true,
-    //   // domain: '.nimesh.engineer',
-    //   maxAge: 1000 * 60 * 60 * 24 //oneDay
-    // }
+    cookie: {
+      // secure: false,
+      sameSite: "None",
+      // httpOnly: true,
+      // domain: '.nimesh.engineer',
+      maxAge: 1000 * 60 * 60 * 24 //oneDay
+    }
   })
 );
 
