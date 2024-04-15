@@ -55,6 +55,8 @@ app.use(
       secure: false,
       sameSite: "none",
       httpOnly: true,
+      domain:'localhost',
+      
       // domain: '.nimesh.engineer',
       maxAge: 1000 * 60 * 60 * 24 //oneDay
     }
