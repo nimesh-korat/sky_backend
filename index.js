@@ -53,7 +53,7 @@ app.use(
     saveUninitialized: true,
     cookie: {
       // secure: false,
-      sameSite: "None",
+      sameSite: "none",
       // httpOnly: true,
       // domain: '.nimesh.engineer',
       maxAge: 1000 * 60 * 60 * 24 //oneDay
