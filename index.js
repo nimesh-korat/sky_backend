@@ -34,7 +34,7 @@ require('dotenv').config();
 const app = express();
 
 //initialize PORT No
-const PORT = 8000;
+const PORTS = 8001;
 //Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -108,6 +108,6 @@ app.post("/api/getBanner", GetBanner);
 connectDB();
 
 //Activate Server
-app.listen(PORT, () => {
-  console.log("Server Started on port: ", PORT);
+app.listen(process.env.PORT || PORTS, () => {
+  console.log("Server Started on port: ", PORTS);
 });
