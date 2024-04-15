@@ -3,7 +3,7 @@ const MongoClient = require("mongodb").MongoClient;
 //MongoDB Connection
 const connectDB = async () => {
   const dbUrl =
-    "mongodb+srv://koratnimesh30:Nimesh123@cluster0.ayot4f5.mongodb.net/SkyWaterPumpDB";
+    process.env.MONGODB_URL;
   try {
     const client = await MongoClient.connect(dbUrl);
     console.log("DB Connected!");

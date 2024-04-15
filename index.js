@@ -28,6 +28,8 @@ const { AddBanner } = require("./api/admin/addBanner");
 const { UpdateBanner } = require("./api/admin/editBanner");
 const { DeleteBanner } = require("./api/admin/deleteBanner");
 const { GetBanner } = require("./api/user/viewBanner");
+require('dotenv').config();
+
 //initialize app
 const app = express();
 
