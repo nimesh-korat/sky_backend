@@ -51,6 +51,12 @@ app.use(
     secret: "your-secret-key",
     resave: false,
     saveUninitialized: true,
+    cookie: {
+      secure: true,
+      sameSite: 'none',
+      // domain: '.nimesh.engineer',
+      maxAge: 1000 * 60 * 60 * 24 //oneDay
+    }
   })
 );
 
